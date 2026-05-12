@@ -1,0 +1,69 @@
+body { 
+    font-family: Arial; background: lightgoldenrodyellow; padding: 20px; text-align: center; 
+    background-image: url("images/cute.jpg");
+}
+
+h1 
+{ 
+    color: red; 
+}
+#battlefield 
+{ 
+    margin: 20px 0; 
+}
+#log { 
+    background: lightblue; padding: 15px; border-radius: 8px;
+    border: 1px solid lightseagreen; height: 180px; overflow-y: auto; text-align: left; 
+}
+
+.pokemon-choice img 
+{ 
+    width: 100px; margin: 10px; cursor: pointer; transition: transform 0.3s;
+}
+
+.pokemon-choice img:hover { 
+    transform: scale(1.2); 
+}
+.wild { 
+    width: 120px; 
+}
+.attack {
+    animation: attackMove 0.6s forwards;
+}
+
+@keyframes attackMove {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-150px) scale(1.2); }
+    100% { transform: translateY(0); }
+}
+
+button {
+  padding: 12px 24px;
+  background: linear-gradient(180deg, lightgoldenrodyellow, orange); /* Pokémon yellow */
+  color: #2a2a2a;
+  font-weight: bold;
+  border: 2px solid #3b4cca;   /* Pokémon blue outline */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px #3b4cca;   /* bottom shadow to look “pressable” */
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(180deg, rgb(0, 243, 0), lightblue);
+  transform: translateY(-2px);
+  box-shadow: 0 6px #3b4cca;
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px lightskyblue;
+}
+
+p{ 
+    color: yellow;
+    padding: 20px;
+    font-weight: bold;
+    align-items: center;
+}

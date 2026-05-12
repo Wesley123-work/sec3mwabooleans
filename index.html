@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pokémon Battle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pokémon Battle Game</h1>
+    <p>Choose your Pokémon to fight the wild Pokémon!</p>
+
+    <!-- Wild Pokémon -->
+    <div id="battlefield">
+    <p>A wild Zubat appeared!</p>
+    <img id="wild" src="images/zubat.png" class="wild">
+    </div>
+
+    <!-- Player choices -->
+    <div class="pokemon-choice">
+    <img src="images/pikachu.png" alt="Pikachu" onclick="choosePokemon(0)">
+    <img src="images/charmander.png" alt="Charmander" onclick="choosePokemon(1)">
+    <img src="images/squirtle.png" alt="Squirtle" onclick="choosePokemon(2)">
+    <img src="images/bulbasaur.png" alt="Bulbasaur" onclick="choosePokemon(3)">
+    </div>
+
+    <!-- Battle Log -->
+    <div id="log"></div>
+    <div><p>Designed by Wesley from S3-2</p></div>
+
+    <!-- Restart Button -->
+    <button id="restartBtn" onclick="restartGame()" style="display:none; margin-top:10px;">
+    Restart Game
+    </button>
+
+<script src="myScript.js"></script>
+</body>
+</html>
